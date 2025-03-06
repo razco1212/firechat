@@ -189,6 +189,7 @@ form input{
     align-items: center;
     padding: 10px;
     width: 100%;
+
 }
 
 .inputForm input {
@@ -208,3 +209,6 @@ form input{
     box-sizing: border-box;
 }
 
+ .r{
+  background-color: #333;
+ }
