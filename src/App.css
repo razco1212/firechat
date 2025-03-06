@@ -154,7 +154,7 @@ form input{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     
 
 
@@ -209,7 +209,3 @@ form input{
     box-sizing: border-box;
 }
 
- .r{
-  background-color: #333;
-  color: #333;
- }
