@@ -154,7 +154,7 @@ form input{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1px;
+    padding: 5px;
     
 
 
@@ -170,7 +170,7 @@ form input{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 10px;
+    padding: 5px;
     
   }
   .buttons button{
