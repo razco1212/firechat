@@ -171,6 +171,7 @@ form input{
     justify-content: space-between;
     align-items: flex-end;
     padding: 5px;
+    background-color: #333;
     
   }
   .buttons button{
