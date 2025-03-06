@@ -165,13 +165,13 @@ form input{
 
 
   .buttons{
-    height: 15vh;
+    height: 6vh;
     max-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 10px;
-   
+   background-color: #333;
     
   }
   .buttons button{
