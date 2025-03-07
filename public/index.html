@@ -1,1 +1,29 @@
-<link rel="manifest" href="/manifest.json">
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireChat</title>
+    
+    <!-- חיבור לקובץ ה-manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- חיבור לאייקון (מותאם לפי הצורך) -->
+    <link rel="icon" href="vite.svg" type="image/svg+xml">
+
+    <!-- צבעי רקע לטלפונים -->
+    <meta name="theme-color" content="#000000">
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(() => console.log("✅ Service Worker Registered"))
+                .catch(err => console.log("❌ Service Worker Registration Failed", err));
+        }
+    </script>
+</head>
+<body>
+    <h1>ברוך הבא ל-FireChat</h1>
+    <p>לחץ על "הוסף למסך הבית" כדי לראות את האפליקציה במסך מלא.</p>
+</body>
+</html>
