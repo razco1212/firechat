@@ -5,6 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- חיבור לאייקון (מותאם לפי הצורך) -->
+    <link rel="icon" href="vite.svg" type="image/svg+xml">
+
+    <!-- צבעי רקע לטלפונים -->
+    <meta name="theme-color" content="#000000">
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(() => console.log("✅ Service Worker Registered"))
+                .catch(err => console.log("❌ Service Worker Registration Failed", err));
+        }
+    </script>
   </head>
   <body>
     <div id="root"></div>
