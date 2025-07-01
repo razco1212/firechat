@@ -133,7 +133,7 @@ form input{
 
   .messages{
     height: 60vh;
- 
+    direction: rtl;
     padding: 10px;
     overflow-y: auto;
   }
