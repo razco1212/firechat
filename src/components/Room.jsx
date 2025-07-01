@@ -10,7 +10,7 @@ const Room = ({ setRoom, setIsUser }) => {
       }}>
         <br />
         <h2>Enter Room Name</h2>
-        <input type="text" name="roomName" placeholder="abcd" />
+        <input type="text" name="roomName" placeholder='Room name?' />
         <br />
         
         <br />

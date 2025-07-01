@@ -35,6 +35,7 @@ const ChatInterface = ({ room, setRoom, setIsUser }) => {
         await addDoc(messageRef, {
             text: msg,
             user: user.displayName,
+            photoURL: user.photoURL,
             room: room,
             createdAt: serverTimestamp()
         });
@@ -49,7 +50,7 @@ const ChatInterface = ({ room, setRoom, setIsUser }) => {
                 {messages.map((message) => (
                     <Message key={message.id} message={message} />
                 ))}
-                <div ref={messagesEndRef}></div> {/* אלמנט לסוף הגלילה */}
+                <div ref={messagesEndRef}></div>
             </div>
             <form onSubmit={handleSendMessage} className='inputForm'>
                 <input placeholder='What you want to say?...'
